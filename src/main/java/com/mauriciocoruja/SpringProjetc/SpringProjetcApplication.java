@@ -1,6 +1,7 @@
 package com.mauriciocoruja.SpringProjetc;
 
 import com.mauriciocoruja.SpringProjetc.entities.Category;
+import com.mauriciocoruja.SpringProjetc.entities.Product;
 import com.mauriciocoruja.SpringProjetc.repositories.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;

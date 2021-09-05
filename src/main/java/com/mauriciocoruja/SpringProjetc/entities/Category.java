@@ -1,6 +1,8 @@
 package com.mauriciocoruja.SpringProjetc.entities;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Category implements Serializable {
@@ -8,6 +10,11 @@ public class Category implements Serializable {
 
     private Long id;
     private String name;
+
+    private List<Product> products = new ArrayList<>();
+
+    public Category() {
+    }
 
     public Category(Long id, String name) {
         this.id = id;
@@ -28,6 +35,14 @@ public class Category implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public List<Product> getProducts() {
+        return products;
+    }
+
+    public void addProduct(Product product){
+        products.add(product);
     }
 
     @Override

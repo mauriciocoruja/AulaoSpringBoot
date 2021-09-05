@@ -28,18 +28,18 @@ public class SpringProjetcApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		Category category1 = new Category(1L,"Eletronics");
-		Category category2 = new Category(2L,"Clothes");
-		Category category3 = new Category(3L,"Books");
-		Category category4 = new Category(4L,"Toys");
-		Category category5 = new Category(5L,"Groceries");
+		Category category1 = new Category(null,"Eletronics");
+		Category category2 = new Category(null,"Clothes");
+		Category category3 = new Category(null,"Books");
+		Category category4 = new Category(null,"Toys");
+		Category category5 = new Category(null,"Groceries");
 
-		Product p1 = new Product(1L, "RTX 3080 Asus TUF", 8500.0, category1);
-		Product p2 = new Product(2L, "Calça Preta Jeans", 85.0, category2);
-		Product p3 = new Product(3L, "Código Limpo", 55.0, category3);
-		Product p4 = new Product(4L, "Funko POP Alloy - Horizon Zero Dawn", 150.0, category4);
-		Product p5 = new Product(5L, "Paçoca - Paçoquiita", 8.50, category5);
-		Product p6 = new Product(5L, "Maria Mole - Paçoquiita", 18.50, category5);
+		Product p1 = new Product(null, "RTX 3080 Asus TUF", 8500.0, category1);
+		Product p2 = new Product(null, "Calça Preta Jeans", 85.0, category2);
+		Product p3 = new Product(null, "Código Limpo", 55.0, category3);
+		Product p4 = new Product(null, "Funko POP Alloy - Horizon Zero Dawn", 150.0, category4);
+		Product p5 = new Product(null, "Paçoca - Paçoquiita", 8.50, category5);
+		Product p6 = new Product(null, "Maria Mole - Paçoquiita", 18.50, category5);
 
 		category1.getProducts().add(p1);
 		category2.getProducts().add(p2);

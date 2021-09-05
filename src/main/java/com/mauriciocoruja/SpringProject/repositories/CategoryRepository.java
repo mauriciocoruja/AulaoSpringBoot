@@ -1,6 +1,6 @@
-package com.mauriciocoruja.SpringProjetc.repositories;
+package com.mauriciocoruja.SpringProject.repositories;
 
-import com.mauriciocoruja.SpringProjetc.entities.Category;
+import com.mauriciocoruja.SpringProject.entities.Category;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;

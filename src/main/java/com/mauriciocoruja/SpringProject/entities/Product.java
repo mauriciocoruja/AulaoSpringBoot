@@ -1,4 +1,4 @@
-package com.mauriciocoruja.SpringProjetc.entities;
+package com.mauriciocoruja.SpringProject.entities;
 
 import java.io.Serializable;
 import java.util.Objects;

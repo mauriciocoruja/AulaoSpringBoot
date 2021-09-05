@@ -1,12 +1,14 @@
-package com.mauriciocoruja.SpringProjetc.repositories;
+package com.mauriciocoruja.SpringProject.repositories;
 
-import com.mauriciocoruja.SpringProjetc.entities.Product;
+import com.mauriciocoruja.SpringProject.entities.Product;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Component
 public class ProductRepository {
     private Map<Long, Product> map = new HashMap<>();
 
@@ -19,6 +21,6 @@ public class ProductRepository {
     }
 
     public List<Product> findAll() {
-        return new ArrayList<>(map.values());
+        return new ArrayList<Product>(map.values());
     }
 }

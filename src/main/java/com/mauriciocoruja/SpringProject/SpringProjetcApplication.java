@@ -1,9 +1,9 @@
-package com.mauriciocoruja.SpringProjetc;
+package com.mauriciocoruja.SpringProject;
 
-import com.mauriciocoruja.SpringProjetc.entities.Category;
-import com.mauriciocoruja.SpringProjetc.entities.Product;
-import com.mauriciocoruja.SpringProjetc.repositories.CategoryRepository;
-import com.mauriciocoruja.SpringProjetc.repositories.ProductRepository;
+import com.mauriciocoruja.SpringProject.entities.Category;
+import com.mauriciocoruja.SpringProject.entities.Product;
+import com.mauriciocoruja.SpringProject.repositories.CategoryRepository;
+import com.mauriciocoruja.SpringProject.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -19,7 +19,6 @@ public class SpringProjetcApplication implements CommandLineRunner {
 
 	@Autowired
 	private ProductRepository productRepository;
-
 
 
 	public static void main(String[] args) {

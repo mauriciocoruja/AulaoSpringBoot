@@ -1,4 +1,6 @@
-package com.mauriciocoruja.SpringProjetc.entities;
+package com.mauriciocoruja.SpringProject.entities;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -11,10 +13,8 @@ public class Category implements Serializable {
     private Long id;
     private String name;
 
+    @JsonIgnore
     private List<Product> products = new ArrayList<>();
-
-    public Category() {
-    }
 
     public Category(Long id, String name) {
         this.id = id;
